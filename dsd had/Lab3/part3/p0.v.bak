@@ -1,0 +1,9 @@
+module P0(a,b,p);
+
+	input a[0];
+	input b[0];
+	output p[0];
+	
+	assign p[0] = a[0]&b[0];
+	
+endmodule

@@ -1,0 +1,12 @@
+module part2
+	
+	input [3:0]v;
+	output [6:0]HEX0,HEX1;
+	
+	comparator(v,z);
+	circuitA (v,y);
+	circuitB(z,HEX1);
+	mux4bit2to1 (z,v,y,m);
+	segmen7(m,HEX0);
+	
+endmodule

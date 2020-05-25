@@ -1,0 +1,27 @@
+module fulladder4bit (SW,v);
+
+	input [8:0]SW ;		// A/B/cin
+	output [4:0]v ;	// cout/s
+	wire c1,c2,c3 ;
+	
+	
+	
+	fulladder
+	FA1 (.ci(SW[8]),.a(SW[4]),.b(SW[0]),.s(v[0]),.co(c1)) ,
+	FA2 (.ci(c1),.a(SW[5]),.b(SW[1]),.s(v[1]),.co(c2)) ,
+	FA3 (.ci(c2),.a(SW[6]),.b(SW[2]),.s(v[2]),.co(c3)) ,
+	FA4 (.ci(c3),.a(SW[7]),.b(SW[3]),.s(v[3]),.co(v[4])) ;
+	
+	
+endmodule
+
+
+module fulladder(ci,a,b,s,co);
+
+	input ci,a,b;
+	output s,co;
+	
+	assign s = a^b^ci ;
+	assign co = (a&b)|(a&ci)|(b&ci) ;
+	
+endmodule

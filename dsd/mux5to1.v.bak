@@ -1,0 +1,20 @@
+module mux5to1(u,v,w,x,y,s,m);
+
+	input u,v,w,x,y;
+	input [2:0]s;
+	
+	output [2:0] LEDG;
+	wire w0,w1,w2;
+	
+	mux2to1
+	w0 (.s(s[0]), .x(u), .y(v), .m(w1)),
+	w1 (.s(s[1]), .x(w), .y(x), .m(w4)),
+	w2 (.s(s[2]), .x(w0), .y(w1), .m(LEDG[2:0]));
+	
+	assign u = SW[2:0] = LEDR[2:0],
+			 v = SW[5:3] = LEDR[5:3],
+			 w = SW[8:6] = LEDR[8:6],
+			 x = SW[11:9] = LEDR[11:9],
+			 y = SW[14:12] = LEDR[14:12];
+			 
+endmodule

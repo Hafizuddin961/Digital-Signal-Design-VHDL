@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hafizuddin\Music\dsd\Lab 2\Part 3\simulation\modelsim
+vfulladder
+IN=MPOf323M61@CKcJVc7?2
+VDbCg[^6G[@>:QmEnRa6PI0
+Z1 dC:\Users\hafizuddin\Music\dsd\Lab 2\Part 3\simulation\modelsim
+w1507445400
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/fulladder.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/fulladder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 <HYXkA1cRT:Oo4IYeT90i3
+!s85 0
+!s108 1508331312.450000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/fulladder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/fulladder.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3} -O0
+vpart3
+!i10b 1
+!s100 ;j?KQ2SbQfGb2zbEJJcZW1
+I1L>^Z1K329>gkEHHg>4OR0
+Vo9BTe?BO^9iD?Qn:TCVfa0
+R1
+w1507446278
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/part3.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/part3.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1508331312.684000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/part3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/part3.v|
+!s101 -O0
+R3
+R4

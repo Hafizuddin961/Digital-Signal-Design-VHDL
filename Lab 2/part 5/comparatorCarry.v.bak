@@ -1,0 +1,8 @@
+module comparatorCarry
+	
+	input [4:0]v0;
+	output cin
+	
+	assign cin = (v0[4:0]>4'd10)? 1:0;
+	
+endmodule

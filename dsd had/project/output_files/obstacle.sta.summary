@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Blink'
+Slack : -2.675
+TNS   : -56.222
+
+Type  : Slow 1200mV 85C Model Setup 'Player[0]'
+Slack : -2.637
+TNS   : -7.084
+
+Type  : Slow 1200mV 85C Model Hold 'Player[0]'
+Slack : -0.044
+TNS   : -0.044
+
+Type  : Slow 1200mV 85C Model Hold 'Blink'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Blink'
+Slack : -3.000
+TNS   : -40.265
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Player[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'Player[0]'
+Slack : -2.331
+TNS   : -6.046
+
+Type  : Slow 1200mV 0C Model Setup 'Blink'
+Slack : -2.314
+TNS   : -47.491
+
+Type  : Slow 1200mV 0C Model Hold 'Player[0]'
+Slack : -0.042
+TNS   : -0.042
+
+Type  : Slow 1200mV 0C Model Hold 'Blink'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Blink'
+Slack : -3.000
+TNS   : -40.265
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Player[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'Blink'
+Slack : -0.811
+TNS   : -13.337
+
+Type  : Fast 1200mV 0C Model Setup 'Player[0]'
+Slack : -0.809
+TNS   : -2.251
+
+Type  : Fast 1200mV 0C Model Hold 'Player[0]'
+Slack : -0.021
+TNS   : -0.021
+
+Type  : Fast 1200mV 0C Model Hold 'Blink'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Blink'
+Slack : -3.000
+TNS   : -33.844
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Player[0]'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

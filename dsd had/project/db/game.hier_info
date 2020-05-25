@@ -1,0 +1,159 @@
+|game
+move => move.IN1
+reset => reset.IN2
+blink => blink.IN1
+obstacle[0] <= obstacle[0].DB_MAX_OUTPUT_PORT_TYPE
+obstacle[1] <= obstacle[1].DB_MAX_OUTPUT_PORT_TYPE
+obstacle[2] <= obstacle[2].DB_MAX_OUTPUT_PORT_TYPE
+obstacle[3] <= obstacle[3].DB_MAX_OUTPUT_PORT_TYPE
+obstacle[4] <= obstacle[4].DB_MAX_OUTPUT_PORT_TYPE
+obstacle[5] <= obstacle[5].DB_MAX_OUTPUT_PORT_TYPE
+obstacle[6] <= obstacle[6].DB_MAX_OUTPUT_PORT_TYPE
+player[0] <= player[0].DB_MAX_OUTPUT_PORT_TYPE
+player[1] <= player[1].DB_MAX_OUTPUT_PORT_TYPE
+player[2] <= player[2].DB_MAX_OUTPUT_PORT_TYPE
+player[3] <= player[3].DB_MAX_OUTPUT_PORT_TYPE
+player[4] <= player[4].DB_MAX_OUTPUT_PORT_TYPE
+player[5] <= player[5].DB_MAX_OUTPUT_PORT_TYPE
+player[6] <= player[6].DB_MAX_OUTPUT_PORT_TYPE
+score[0] <= <GND>
+score[1] <= <GND>
+score[2] <= <GND>
+score[3] <= <GND>
+score[4] <= <GND>
+score[5] <= <GND>
+
+
+|game|player:p1
+move => player[0]~reg0.CLK
+move => player[1]~reg0.CLK
+move => player[2]~reg0.CLK
+move => player[3]~reg0.CLK
+move => player[4]~reg0.CLK
+move => player[5]~reg0.CLK
+move => player[6]~reg0.CLK
+reset => player[0]~reg0.PRESET
+reset => player[1]~reg0.ACLR
+reset => player[2]~reg0.ACLR
+reset => player[3]~reg0.ACLR
+reset => player[4]~reg0.ACLR
+reset => player[5]~reg0.ACLR
+reset => player[6]~reg0.ACLR
+player[0] <= player[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player[1] <= player[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player[2] <= player[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player[3] <= player[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player[4] <= player[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player[5] <= player[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player[6] <= player[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|obstacle:o1
+Player[0] => obstacle[1].OUTPUTSELECT
+Player[0] => obstacle[1].IN1
+Player[0] => obstacle[5].IN0
+Player[0] => obstacle[3].IN1
+Player[1] => ~NO_FANOUT~
+Player[2] => obstacle[3].OUTPUTSELECT
+Player[2] => obstacle[3].IN0
+Player[2] => obstacle[6].IN0
+Player[2] => obstacle[5].IN1
+Player[3] => ~NO_FANOUT~
+Player[4] => obstacle.OUTPUTSELECT
+Player[4] => obstacle[6].IN1
+Player[4] => obstacle[3].IN1
+Player[5] => ~NO_FANOUT~
+Player[6] => ~NO_FANOUT~
+Blink => Blink.IN1
+Reset => Reset.IN1
+obstacle[0] <= <GND>
+obstacle[1] <= obstacle[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+obstacle[2] <= <GND>
+obstacle[3] <= obstacle[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+obstacle[4] <= <GND>
+obstacle[5] <= obstacle[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+obstacle[6] <= <GND>
+
+
+|game|obstacle:o1|testtimer:t1
+Clk => count[0].CLK
+Clk => count[1].CLK
+Clk => count[2].CLK
+Clk => count[3].CLK
+Clk => count[4].CLK
+Clk => count[5].CLK
+Clk => count[6].CLK
+Clk => count[7].CLK
+Clk => count[8].CLK
+Clk => count[9].CLK
+Clk => count[10].CLK
+Clk => count[11].CLK
+Clk => count[12].CLK
+Clk => count[13].CLK
+Clk => count[14].CLK
+Clk => count[15].CLK
+Clk => count[16].CLK
+Clk => count[17].CLK
+Clk => count[18].CLK
+Clk => count[19].CLK
+Clk => count[20].CLK
+Clk => count[21].CLK
+Clk => count[22].CLK
+Clk => count[23].CLK
+Clk => count[24].CLK
+Clk => count[25].CLK
+Clk => count[26].CLK
+Clk => count[27].CLK
+Clk => delay~reg0.CLK
+Clr => count[0].ACLR
+Clr => count[1].ACLR
+Clr => count[2].ACLR
+Clr => count[3].ACLR
+Clr => count[4].ACLR
+Clr => count[5].ACLR
+Clr => count[6].ACLR
+Clr => count[7].ACLR
+Clr => count[8].ACLR
+Clr => count[9].ACLR
+Clr => count[10].ACLR
+Clr => count[11].ACLR
+Clr => count[12].ACLR
+Clr => count[13].ACLR
+Clr => count[14].ACLR
+Clr => count[15].ACLR
+Clr => count[16].ACLR
+Clr => count[17].ACLR
+Clr => count[18].ACLR
+Clr => count[19].ACLR
+Clr => count[20].ACLR
+Clr => count[21].ACLR
+Clr => count[22].ACLR
+Clr => count[23].ACLR
+Clr => count[24].ACLR
+Clr => count[25].ACLR
+Clr => count[26].ACLR
+Clr => count[27].ACLR
+Clr => delay~reg0.ACLR
+delay <= delay~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|cmpplayobs:c1
+player[0] => ~NO_FANOUT~
+player[1] => always0.IN0
+player[2] => ~NO_FANOUT~
+player[3] => always0.IN0
+player[4] => ~NO_FANOUT~
+player[5] => always0.IN0
+player[6] => ~NO_FANOUT~
+obstacle[0] => ~NO_FANOUT~
+obstacle[1] => always0.IN1
+obstacle[2] => ~NO_FANOUT~
+obstacle[3] => always0.IN1
+obstacle[4] => ~NO_FANOUT~
+obstacle[5] => always0.IN1
+obstacle[6] => ~NO_FANOUT~
+equal[0] <= equal[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+equal[1] <= equal[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+equal[2] <= equal[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

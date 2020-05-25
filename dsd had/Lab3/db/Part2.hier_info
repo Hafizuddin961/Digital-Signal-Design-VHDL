@@ -1,0 +1,163 @@
+|overflow
+add_sub => add_sub.IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+LEDR[0] << Part2:comb_3.port3
+LEDR[1] << Part2:comb_3.port3
+LEDR[2] << Part2:comb_3.port3
+LEDR[3] << Part2:comb_3.port3
+LEDR[4] << Part2:comb_3.port3
+LEDR[5] << Part2:comb_3.port3
+LEDR[6] << Part2:comb_3.port3
+LEDR[7] << Part2:comb_3.port3
+LEDR[8] << Part2:comb_3.port3
+out[0] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] << out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3
+add_sub => add_sub.IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+LEDR[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= B[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= B[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= B[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= add_sub.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= fulladder:FA1.s
+LEDG[1] <= fulladder:FA2.s
+LEDG[2] <= fulladder:FA3.s
+LEDG[3] <= fulladder:FA4.s
+LEDG[4] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|add_sub:comb_3
+add_sub => add_sub.IN4
+B[0] => B[0].IN2
+B[1] => B[1].IN2
+B[2] => B[2].IN2
+B[3] => B[3].IN2
+m[0] <= mux2to1:m0.m
+m[1] <= mux2to1:m1.m
+m[2] <= mux2to1:m2.m
+m[3] <= mux2to1:m3.m
+
+
+|overflow|Part2:comb_3|add_sub:comb_3|twoscompl:comb_3
+B[0] => Add0.IN8
+B[1] => Add0.IN7
+B[2] => Add0.IN6
+B[3] => Add0.IN5
+B2[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+B2[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+B2[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+B2[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|add_sub:comb_3|mux2to1:m0
+s => m.IN0
+s => m.IN0
+x => m.IN1
+y => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|add_sub:comb_3|mux2to1:m1
+s => m.IN0
+s => m.IN0
+x => m.IN1
+y => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|add_sub:comb_3|mux2to1:m2
+s => m.IN0
+s => m.IN0
+x => m.IN1
+y => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|add_sub:comb_3|mux2to1:m3
+s => m.IN0
+s => m.IN0
+x => m.IN1
+y => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|fulladder:FA1
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|fulladder:FA2
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|fulladder:FA3
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|overflow|Part2:comb_3|fulladder:FA4
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+

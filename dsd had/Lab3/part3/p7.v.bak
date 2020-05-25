@@ -1,0 +1,10 @@
+module p7(p)
+
+	output p[7];
+	wire c12;
+	
+	p6(a,b,p,c12);
+	
+	assign p[7] = c12;
+	
+endmodule

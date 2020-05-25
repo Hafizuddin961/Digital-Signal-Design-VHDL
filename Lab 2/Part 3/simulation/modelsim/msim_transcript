@@ -1,0 +1,118 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do part3_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 3 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/fulladder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 3 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 3/part3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module part3
+# 
+# Top level modules:
+# 	part3
+# 
+wave create -pattern none -portmode input -language vlog -range 8 0 /part3/SW
+# part3
+wave create -pattern none -portmode output -language vlog -range 4 0 /part3/LEDG
+# part3
+wave create -pattern none -portmode output -language vlog -range 8 0 /part3/LEDR
+# part3
+wave modify -driver freeze -pattern constant -value (no value) -range 8 0 -starttime 0ns -endtime 1000ns NewSig:/part3/SW
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 50 -range 8 0 -starttime 0sec -endtime 1000sec NewSig:/part3/SW
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value (no value) -range 8 0 -starttime 0sec -endtime 20sec NewSig:/part3/SW
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 50 -range 8 0 -starttime 0ns -endtime 1000ns NewSig:/part3/SW
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value (no value) -range 8 0 -starttime 0ns -endtime 1000ns NewSig:/part3/SW
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 50 -range 8 0 -starttime 0ns -endtime 1000ns NewSig:/part3/SW
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+vsim -voptargs=+acc rtl_work.part3
+# vsim -voptargs=+acc rtl_work.part3 
+# Loading rtl_work.part3
+# Loading rtl_work.fulladder
+add wave -position end  sim:/part3/SW
+add wave -position end  sim:/part3/LEDR
+add wave -position end  sim:/part3/LEDG
+vsim -voptargs=+acc rtl_work.part3
+# vsim -voptargs=+acc rtl_work.part3 
+# Loading rtl_work.part3
+# Loading rtl_work.fulladder
+add wave -position end  sim:/part3/SW
+add wave -position end  sim:/part3/LEDR
+add wave -position end  sim:/part3/LEDG
+run -all
+vsim rtl_work.part3
+# vsim rtl_work.part3 
+# Loading rtl_work.part3
+# Loading rtl_work.fulladder
+wave create -pattern none -portmode input -language vlog -range 8 0 /part3/SW
+# part3
+wave create -pattern none -portmode output -language vlog -range 4 0 /part3/LEDG
+# part3
+wave create -pattern none -portmode output -language vlog -range 8 0 /part3/LEDR
+# part3
+wave create -pattern none -portmode input -language vlog -range 8 0 /part3/SW
+# /part3/SW already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -pattern none -portmode output -language vlog -range 4 0 /part3/LEDG
+# /part3/LEDG already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -pattern none -portmode output -language vlog -range 8 0 /part3/LEDR
+# /part3/LEDR already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave modify -driver freeze -pattern constant -value 50 -range 8 0 -starttime 0ps -endtime 1000ps Edit:/part3/SW
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver expectedOutput -pattern constant -value 50 -range 4 0 -starttime 0ps -endtime 1000ps Edit:/part3/LEDG
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver expectedOutput -pattern constant -value 50 -range 8 0 -starttime 0ps -endtime 1000ps Edit:/part3/LEDR
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+vsim rtl_work.part3
+# vsim rtl_work.part3 
+# Loading rtl_work.part3
+# Loading rtl_work.fulladder
+add wave -position end  sim:/part3/SW
+add wave -position end  sim:/part3/LEDR
+add wave -position end  sim:/part3/LEDG
+run -all
+wave create -pattern none -portmode input -language vlog -range 8 0 /part3/SW
+# part3
+wave create -pattern none -portmode output -language vlog -range 4 0 /part3/LEDG
+# part3
+wave create -pattern none -portmode output -language vlog -range 8 0 /part3/LEDR
+# part3

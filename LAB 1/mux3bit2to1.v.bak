@@ -1,0 +1,8 @@
+module mux3bit2to1 (s,x,y,m);
+	
+	input [2:0]s,x,y;
+	output m;
+	
+	assign m = (~s&x)|(s&y);
+	
+endmodule

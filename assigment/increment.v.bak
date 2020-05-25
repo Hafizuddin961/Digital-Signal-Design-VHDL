@@ -1,0 +1,8 @@
+module inc(A,inc);
+	
+	input [7:4]A;
+	output inc;
+	
+	assign inc = A + 1;
+	
+endmodule

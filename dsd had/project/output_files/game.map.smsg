@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at game.v(37): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at game.v(102): always construct contains both blocking and non-blocking assignments

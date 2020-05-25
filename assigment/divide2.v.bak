@@ -1,0 +1,8 @@
+module divide2(A,div);
+	
+	input [7:4]A;
+	output div;
+	
+	assign div = A / 2;
+	
+endmodule

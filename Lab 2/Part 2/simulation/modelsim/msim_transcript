@@ -1,0 +1,88 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do part2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module circuitA
+# 
+# Top level modules:
+# 	circuitA
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module circuitB
+# 
+# Top level modules:
+# 	circuitB
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2to1
+# 
+# Top level modules:
+# 	mux2to1
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux4bit2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4bit2to1
+# 
+# Top level modules:
+# 	mux4bit2to1
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/segmen7.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module segmen7
+# 
+# Top level modules:
+# 	segmen7
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/comparator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# vlog -vlog01compat -work work +incdir+C:/Users/hafizuddin/Music/dsd/Lab\ 2/Part\ 2 {C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/part2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module part2
+# 
+# Top level modules:
+# 	part2
+# 
+wave create -pattern none -portmode input -language vlog -range 3 0 /part2/v
+# part2
+wave create -pattern none -portmode output -language vlog -range 6 0 /part2/HEX0
+# part2
+wave create -pattern none -portmode output -language vlog -range 6 0 /part2/HEX1
+# part2
+wave modify -driver freeze -pattern constant -value (no value) -range 3 0 -starttime 0ns -endtime 1000ns NewSig:/part2/v
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver expectedOutput -pattern constant -value (no value) -range 6 0 -starttime 0ns -endtime 1000ns NewSig:/part2/HEX0
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver expectedOutput -pattern constant -value (no value) -range 6 0 -starttime 0ns -endtime 1000ns NewSig:/part2/HEX1
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 50 -range 3 0 -starttime 0ns -endtime 1000ns NewSig:/part2/v
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value (no value) -range 3 0 -starttime 0ns -endtime 1000ns NewSig:/part2/v
+# Invalid binary digit: (.
+#Invalid value to -value switch: (no
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave modify -driver freeze -pattern constant -value 50 -range 3 0 -starttime 0ns -endtime 1000ns NewSig:/part2/v
+# Invalid binary digit: 5.
+#Invalid value to -value switch: 50
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave edit extend -extend by -time 315ns
+wave edit extend -extend to -time 315ns
+wave edit extend -extend by -time 315ns

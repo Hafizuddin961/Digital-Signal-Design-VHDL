@@ -1,0 +1,67 @@
+module sub (SW,LEDG,LEDR);
+
+	input [8:0]SW ;		// A/B/cin
+	output [8:0]LEDR ;
+	output [4:0]LEDG ;	// cout/s
+	wire c1,c2,c3,c4,m ;
+	
+	mux4bit2to1 (z,v,y,m);
+	
+	fulladder
+	FA1 (.ci(0),.a(SW[4]),.b(m[0]),.s(LEDG[0]),.co(c1)) ,
+	FA2 (.ci(c1),.a(SW[5]),.b(m[1]),.s(LEDG[1]),.co(c2)) ,
+	FA3 (.ci(c2),.a(SW[6]),.b(m[2]),.s(LEDG[2]),.co(c3)) ,
+	FA4 (.ci(c3),.a(SW[7]),.b(m[3]),.s(LEDG[3]),.co(c4) ;
+	
+	assign LEDR = SW;
+	assign LEDG[4] = c3^c4;
+	
+	
+endmodule
+
+
+module fulladder(ci,a,b,s,co);
+
+	input ci,a,b;
+	output s,co;
+	
+	assign s = a^b^ci ;
+	assign co = (a&b)|(a&ci)|(b&ci) ;
+	
+endmodule
+
+module mux2to1 (s,x,y,m);
+	
+	input s,x,y;
+	output m;
+	
+	assign m = (~s&x)|(s&y);
+	
+endmodule
+
+module mux4bit2to1 (z,B,m);
+	
+	input sub;
+	input [3:0]B;
+	output [3:0]m;
+	wire Bbar;
+	
+	twoscompl (B,Bbar);
+	
+	mux2to1
+	m0 (.s(sub), .x(B[0]), .y(Bbar[0]), .m(m[0])),
+	m1 (.s(sub), .x(B[1]), .y(Bbar[1]), .m(m[1])),
+	m2 (.s(sub), .x(B[2]), .y(Bbar[2]), .m(m[2])),
+	m3 (.s(sub), .x(B[3]), .y(Bbar[3]), .m(m[3]));
+	
+	
+endmodule
+
+module twoscompl (B,Bbar);
+
+	input [3:0]B;
+	output [3:0]Bbar;
+	
+	assign Bbar = (~B) + 1;
+	
+endmodule

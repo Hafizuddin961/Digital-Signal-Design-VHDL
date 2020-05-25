@@ -1,0 +1,9 @@
+module bitwiseOR (A,B,OR);
+
+	input [7:4]A ;	
+	input [3:0]B ;
+	output [3:0]OR;
+	
+	assign OR = A | B;
+	
+endmodule

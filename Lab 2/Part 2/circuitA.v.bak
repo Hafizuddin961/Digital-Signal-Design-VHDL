@@ -1,0 +1,21 @@
+module circuitA (v,z);
+
+	input [2:0]v;
+	output reg [2:0]z;
+	
+	always @ (v[2:0]) 
+		if (v == 3'b010);
+			z = 3'b000;
+		else if (v == 3'b011);
+			z = 3'b001;
+		else if (v == 3'b100);
+			z = 3'b010;
+		else if (v == 3'b101);
+			z = 3'b011;
+		else if (v == 3'b110);
+			z = 3'b100;
+		else if (v == 3'b111):
+			z = 3'b101;
+		else z = 3'bxxx;
+		
+endmodule

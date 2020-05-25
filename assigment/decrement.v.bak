@@ -1,0 +1,8 @@
+module decrement(A,dec);
+	
+	input [7:4]A;
+	output inc;
+	
+	assign dec = A + 1;
+	
+endmodule

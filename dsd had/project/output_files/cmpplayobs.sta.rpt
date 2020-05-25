@@ -1,0 +1,742 @@
+TimeQuest Timing Analyzer report for cmpplayobs
+Tue Dec 19 17:52:17 2017
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Minimum Pulse Width: 'obstacle[1]'
+ 13. Setup Times
+ 14. Hold Times
+ 15. Clock to Output Times
+ 16. Minimum Clock to Output Times
+ 17. Slow 1200mV 85C Model Metastability Report
+ 18. Slow 1200mV 0C Model Fmax Summary
+ 19. Slow 1200mV 0C Model Setup Summary
+ 20. Slow 1200mV 0C Model Hold Summary
+ 21. Slow 1200mV 0C Model Recovery Summary
+ 22. Slow 1200mV 0C Model Removal Summary
+ 23. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 24. Slow 1200mV 0C Model Minimum Pulse Width: 'obstacle[1]'
+ 25. Setup Times
+ 26. Hold Times
+ 27. Clock to Output Times
+ 28. Minimum Clock to Output Times
+ 29. Slow 1200mV 0C Model Metastability Report
+ 30. Fast 1200mV 0C Model Setup Summary
+ 31. Fast 1200mV 0C Model Hold Summary
+ 32. Fast 1200mV 0C Model Recovery Summary
+ 33. Fast 1200mV 0C Model Removal Summary
+ 34. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 35. Fast 1200mV 0C Model Minimum Pulse Width: 'obstacle[1]'
+ 36. Setup Times
+ 37. Hold Times
+ 38. Clock to Output Times
+ 39. Minimum Clock to Output Times
+ 40. Fast 1200mV 0C Model Metastability Report
+ 41. Multicorner Timing Analysis Summary
+ 42. Setup Times
+ 43. Hold Times
+ 44. Clock to Output Times
+ 45. Minimum Clock to Output Times
+ 46. Board Trace Model Assignments
+ 47. Input Transition Times
+ 48. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 49. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 50. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 51. Clock Transfers
+ 52. Report TCCS
+ 53. Report RSKM
+ 54. Unconstrained Paths
+ 55. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; cmpplayobs                                         ;
+; Device Family      ; Cyclone IV E                                       ;
+; Device Name        ; EP4CE115F29C7                                      ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                   ;
++-------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------+
+; Clock Name  ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets         ;
++-------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------+
+; obstacle[1] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { obstacle[1] } ;
++-------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------+
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------------+--------+----------------------------+
+; Clock       ; Slack  ; End Point TNS              ;
++-------------+--------+----------------------------+
+; obstacle[1] ; -3.000 ; -3.000                     ;
++-------------+--------+----------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'obstacle[1]'                                                    ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock       ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; obstacle[1] ; Rise       ; obstacle[1]          ;
+; 0.394  ; 0.394        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; obstacle[1]~input|o  ;
+; 0.400  ; 0.400        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[1]$latch       ;
+; 0.406  ; 0.406        ; 0.000          ; High Pulse Width ; obstacle[1] ; Fall       ; equal[1]~1|combout   ;
+; 0.410  ; 0.410        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]$latch       ;
+; 0.415  ; 0.415        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; always0~0|datad      ;
+; 0.415  ; 0.415        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]~2|datad     ;
+; 0.417  ; 0.417        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[1]~1|datad     ;
+; 0.421  ; 0.421        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]$latch|datad ;
+; 0.429  ; 0.429        ; 0.000          ; High Pulse Width ; obstacle[1] ; Fall       ; equal[1]$latch|datad ;
+; 0.444  ; 0.444        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; always0~0|combout    ;
+; 0.444  ; 0.444        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]~2|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; obstacle[1]~input|i  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; obstacle[1]~input|i  ;
+; 0.553  ; 0.553        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; always0~0|combout    ;
+; 0.553  ; 0.553        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]~2|combout   ;
+; 0.569  ; 0.569        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Fall       ; equal[1]$latch|datad ;
+; 0.576  ; 0.576        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]$latch|datad ;
+; 0.582  ; 0.582        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[1]~1|datad     ;
+; 0.583  ; 0.583        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; always0~0|datad      ;
+; 0.583  ; 0.583        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]~2|datad     ;
+; 0.587  ; 0.587        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]$latch       ;
+; 0.593  ; 0.593        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Fall       ; equal[1]~1|combout   ;
+; 0.599  ; 0.599        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[1]$latch       ;
+; 0.606  ; 0.606        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; obstacle[1]~input|o  ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; 3.610 ; 4.027 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; 3.191 ; 3.578 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; 3.610 ; 4.027 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; 4.190 ; 4.582 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; 4.082 ; 4.473 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; 4.190 ; 4.582 ; Rise       ; obstacle[1]     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++--------------+-------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+-------------+--------+--------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; -2.034 ; -2.395 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; -2.034 ; -2.395 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; -2.660 ; -3.041 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; -2.944 ; -3.321 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; -2.944 ; -3.321 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; -3.165 ; -3.511 ; Rise       ; obstacle[1]     ;
++--------------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 11.332 ; 11.136 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 11.332 ; 11.136 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 8.843  ; 8.893  ; Rise       ; obstacle[1]     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 8.539  ; 8.585  ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 10.927 ; 10.737 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 8.539  ; 8.585  ; Rise       ; obstacle[1]     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------------+--------+---------------------------+
+; Clock       ; Slack  ; End Point TNS             ;
++-------------+--------+---------------------------+
+; obstacle[1] ; -3.000 ; -3.000                    ;
++-------------+--------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'obstacle[1]'                                                     ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock       ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; obstacle[1] ; Rise       ; obstacle[1]          ;
+; 0.416  ; 0.416        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; obstacle[1]~input|o  ;
+; 0.454  ; 0.454        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[1]$latch       ;
+; 0.467  ; 0.467        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; always0~0|datad      ;
+; 0.467  ; 0.467        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]~2|datad     ;
+; 0.469  ; 0.469        ; 0.000          ; High Pulse Width ; obstacle[1] ; Fall       ; equal[1]~1|combout   ;
+; 0.474  ; 0.474        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]$latch       ;
+; 0.478  ; 0.478        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[1]~1|datad     ;
+; 0.483  ; 0.483        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]$latch|datad ;
+; 0.488  ; 0.488        ; 0.000          ; High Pulse Width ; obstacle[1] ; Fall       ; equal[1]$latch|datad ;
+; 0.497  ; 0.497        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; always0~0|combout    ;
+; 0.497  ; 0.497        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]~2|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; obstacle[1]~input|i  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; obstacle[1]~input|i  ;
+; 0.501  ; 0.501        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; always0~0|combout    ;
+; 0.501  ; 0.501        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]~2|combout   ;
+; 0.510  ; 0.510        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Fall       ; equal[1]$latch|datad ;
+; 0.517  ; 0.517        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]$latch|datad ;
+; 0.520  ; 0.520        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[1]~1|datad     ;
+; 0.526  ; 0.526        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]$latch       ;
+; 0.529  ; 0.529        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Fall       ; equal[1]~1|combout   ;
+; 0.531  ; 0.531        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; always0~0|datad      ;
+; 0.531  ; 0.531        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]~2|datad     ;
+; 0.544  ; 0.544        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[1]$latch       ;
+; 0.584  ; 0.584        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; obstacle[1]~input|o  ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; 3.154 ; 3.444 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; 2.762 ; 3.029 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; 3.154 ; 3.444 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; 3.691 ; 3.940 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; 3.588 ; 3.850 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; 3.691 ; 3.940 ; Rise       ; obstacle[1]     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++--------------+-------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+-------------+--------+--------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; -1.715 ; -1.966 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; -1.715 ; -1.966 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; -2.287 ; -2.551 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; -2.562 ; -2.814 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; -2.562 ; -2.814 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; -2.753 ; -2.971 ; Rise       ; obstacle[1]     ;
++--------------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 10.461 ; 10.091 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 10.461 ; 10.091 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 8.157  ; 8.041  ; Rise       ; obstacle[1]     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+-------------+--------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+-------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 7.862  ; 7.749 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 10.070 ; 9.714 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 7.862  ; 7.749 ; Rise       ; obstacle[1]     ;
++-----------+-------------+--------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------------+--------+---------------------------+
+; Clock       ; Slack  ; End Point TNS             ;
++-------------+--------+---------------------------+
+; obstacle[1] ; -3.000 ; -3.000                    ;
++-------------+--------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'obstacle[1]'                                                     ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock       ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; obstacle[1] ; Rise       ; obstacle[1]          ;
+; 0.075  ; 0.075        ; 0.000          ; High Pulse Width ; obstacle[1] ; Fall       ; equal[1]~1|combout   ;
+; 0.076  ; 0.076        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]$latch       ;
+; 0.081  ; 0.081        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[1]~1|datad     ;
+; 0.082  ; 0.082        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]$latch|datad ;
+; 0.088  ; 0.088        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[1]$latch       ;
+; 0.093  ; 0.093        ; 0.000          ; High Pulse Width ; obstacle[1] ; Fall       ; equal[1]$latch|datad ;
+; 0.096  ; 0.096        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; always0~0|datad      ;
+; 0.096  ; 0.096        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]~2|datad     ;
+; 0.100  ; 0.100        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; always0~0|combout    ;
+; 0.100  ; 0.100        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; equal[2]~2|combout   ;
+; 0.120  ; 0.120        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; obstacle[1]~input|o  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; obstacle[1]~input|i  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Rise       ; obstacle[1]~input|i  ;
+; 0.880  ; 0.880        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; obstacle[1]~input|o  ;
+; 0.899  ; 0.899        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; always0~0|combout    ;
+; 0.899  ; 0.899        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]~2|combout   ;
+; 0.904  ; 0.904        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; always0~0|datad      ;
+; 0.904  ; 0.904        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]~2|datad     ;
+; 0.906  ; 0.906        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Fall       ; equal[1]$latch|datad ;
+; 0.910  ; 0.910        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[1]$latch       ;
+; 0.917  ; 0.917        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]$latch|datad ;
+; 0.918  ; 0.918        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[1]~1|datad     ;
+; 0.922  ; 0.922        ; 0.000          ; High Pulse Width ; obstacle[1] ; Rise       ; equal[2]$latch       ;
+; 0.923  ; 0.923        ; 0.000          ; Low Pulse Width  ; obstacle[1] ; Fall       ; equal[1]~1|combout   ;
++--------+--------------+----------------+------------------+-------------+------------+----------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; 1.858 ; 2.472 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; 1.662 ; 2.249 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; 1.858 ; 2.472 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; 2.155 ; 2.800 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; 2.134 ; 2.789 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; 2.155 ; 2.800 ; Rise       ; obstacle[1]     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++--------------+-------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+-------------+--------+--------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; -1.103 ; -1.673 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; -1.103 ; -1.673 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; -1.407 ; -2.003 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; -1.583 ; -2.228 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; -1.583 ; -2.228 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; -1.667 ; -2.284 ; Rise       ; obstacle[1]     ;
++--------------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 5.706 ; 6.094 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 5.706 ; 6.094 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 4.508 ; 4.822 ; Rise       ; obstacle[1]     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 4.358 ; 4.660 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 5.507 ; 5.880 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 4.358 ; 4.660 ; Rise       ; obstacle[1]     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
+;  obstacle[1]     ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -3.0                ;
+;  obstacle[1]     ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; 3.610 ; 4.027 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; 3.191 ; 3.578 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; 3.610 ; 4.027 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; 4.190 ; 4.582 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; 4.082 ; 4.473 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; 4.190 ; 4.582 ; Rise       ; obstacle[1]     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++--------------+-------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+-------------+--------+--------+------------+-----------------+
+; obstacle[*]  ; obstacle[1] ; -1.103 ; -1.673 ; Rise       ; obstacle[1]     ;
+;  obstacle[3] ; obstacle[1] ; -1.103 ; -1.673 ; Rise       ; obstacle[1]     ;
+;  obstacle[5] ; obstacle[1] ; -1.407 ; -2.003 ; Rise       ; obstacle[1]     ;
+; player[*]    ; obstacle[1] ; -1.583 ; -2.228 ; Rise       ; obstacle[1]     ;
+;  player[3]   ; obstacle[1] ; -1.583 ; -2.228 ; Rise       ; obstacle[1]     ;
+;  player[5]   ; obstacle[1] ; -1.667 ; -2.284 ; Rise       ; obstacle[1]     ;
++--------------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 11.332 ; 11.136 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 11.332 ; 11.136 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 8.843  ; 8.893  ; Rise       ; obstacle[1]     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; equal[*]  ; obstacle[1] ; 4.358 ; 4.660 ; Rise       ; obstacle[1]     ;
+;  equal[1] ; obstacle[1] ; 5.507 ; 5.880 ; Rise       ; obstacle[1]     ;
+;  equal[2] ; obstacle[1] ; 4.358 ; 4.660 ; Rise       ; obstacle[1]     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; equal[0]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; equal[1]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; equal[2]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; player[0]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; player[2]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; player[4]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; player[6]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[0]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[2]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[4]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[6]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; player[3]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; player[5]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[5]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[3]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; player[1]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; obstacle[1]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; equal[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; equal[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; equal[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.67e-09 V                   ; 2.38 V              ; -0.0485 V           ; 0.167 V                              ; 0.096 V                              ; 2.95e-10 s                  ; 2.73e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.67e-09 V                  ; 2.38 V             ; -0.0485 V          ; 0.167 V                             ; 0.096 V                             ; 2.95e-10 s                 ; 2.73e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.18e-09 V                   ; 2.38 V              ; -0.00483 V          ; 0.152 V                              ; 0.012 V                              ; 4.81e-10 s                  ; 6.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.18e-09 V                  ; 2.38 V             ; -0.00483 V         ; 0.152 V                             ; 0.012 V                             ; 4.81e-10 s                 ; 6.29e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; equal[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; equal[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; equal[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.75e-07 V                   ; 2.35 V              ; -0.0109 V           ; 0.084 V                              ; 0.027 V                              ; 4.31e-10 s                  ; 3.61e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.75e-07 V                  ; 2.35 V             ; -0.0109 V          ; 0.084 V                             ; 0.027 V                             ; 4.31e-10 s                 ; 3.61e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.15e-07 V                   ; 2.35 V              ; -0.00712 V          ; 0.093 V                              ; 0.02 V                               ; 6.21e-10 s                  ; 7.9e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 6.15e-07 V                  ; 2.35 V             ; -0.00712 V         ; 0.093 V                             ; 0.02 V                              ; 6.21e-10 s                 ; 7.9e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; equal[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; equal[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; equal[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 9     ; 9    ;
+; Unconstrained Output Ports      ; 3     ; 3    ;
+; Unconstrained Output Port Paths ; 3     ; 3    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Dec 19 17:52:16 2017
+Info: Command: quartus_sta cmpplayobs -c cmpplayobs
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 3 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'cmpplayobs.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name obstacle[1] obstacle[1]
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -3.000 obstacle[1] 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -3.000 obstacle[1] 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -3.000 obstacle[1] 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 539 megabytes
+    Info: Processing ended: Tue Dec 19 17:52:17 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

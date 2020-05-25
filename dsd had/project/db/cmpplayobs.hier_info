@@ -1,0 +1,20 @@
+|cmpplayobs
+player[0] => ~NO_FANOUT~
+player[1] => always0.IN0
+player[2] => ~NO_FANOUT~
+player[3] => always0.IN0
+player[4] => ~NO_FANOUT~
+player[5] => always0.IN0
+player[6] => ~NO_FANOUT~
+obstacle[0] => ~NO_FANOUT~
+obstacle[1] => always0.IN1
+obstacle[2] => ~NO_FANOUT~
+obstacle[3] => always0.IN1
+obstacle[4] => ~NO_FANOUT~
+obstacle[5] => always0.IN1
+obstacle[6] => ~NO_FANOUT~
+equal[0] <= equal[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+equal[1] <= equal[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+equal[2] <= equal[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

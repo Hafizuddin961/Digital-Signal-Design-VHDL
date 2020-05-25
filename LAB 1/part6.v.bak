@@ -1,0 +1,44 @@
+module part6(SW,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
+
+	input [2:0]SW;
+	output [0:6]HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7;
+	reg [0:6]HEX0,HEX1,HEX2,HEX3,HEX4;
+	
+	always @(SW)
+		case (SW)
+			3'b000 : HEX0 = 7'b1000000;	//O
+			3'b000 :	HEX1 = 7'b1000111;	//L
+			3'b000 :	HEX2 = 7'b1000111;	//L
+			3'b000 :	HEX3 = 7'b0000110;	//E
+			3'b000 :	HEX4 = 7'b0001001;	//H
+			
+			3'b001 : HEX0 = 7'b0001001;	//H
+			3'b001 :	HEX1 = 7'b1000000;	//O
+			3'b001 : HEX2 = 7'b1000111;	//L
+			3'b001 :	HEX3 = 7'b1000111;	//L
+			3'b001 :	HEX4 = 7'b0000110;	//E
+			
+			3'b010 : HEX0 = 7'b0000110;	//E
+			3'b010 :	HEX1 = 7'b0001001;	//H
+			3'b010 : HEX2 = 7'b1000000;	//O
+			3'b010 :	HEX3 = 7'b1000111;	//L
+			3'b010 :	HEX4 = 7'b1000111;	//L
+			
+			3'b001 : HEX0 = 7'b1000111;	//L
+			3'b001 :	HEX1 = 7'b0000110;	//E
+			3'b001 : HEX2 = 7'b0001001;	//H
+			3'b001 :	HEX3 = 7'b1000000;	//O
+			3'b001 :	HEX4 = 7'b1000111;	//L
+			
+			3'b001 : HEX0 = 7'b1000111;	//L
+			3'b001 :	HEX1 = 7'b1000111;	//L
+			3'b001 : HEX2 = 7'b0000110;	//E
+			3'b001 :	HEX3 = 7'b0001001;	//H
+			3'b001 :	HEX4 = 7'b1000000;	//O
+			
+		endcase	
+	
+		
+endmodule
+
+	

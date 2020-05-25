@@ -1,0 +1,328 @@
+module Hangman(CLK,EN,CLR,power,SW,HEX7,HEX6,HEX5,HEX4,HEX3,HEX2,HEX1,HEX0)
+	
+	input CLK,EN,CLR,power
+	input [15:0]SW;
+	output reg [6:0]HEX7,HEX6,HEX5,HEX4,HEX3,HEX2,HEX1,HEX0;
+	
+	wire [3:0]Q,press;
+	reg AGTB,ALTB,AEQB;
+	
+	
+
+random(CLK,EN,CLR,Q);	
+encoder(SW,CLR,CLK,press);
+
+segmen7(Q,HEX0,HEX1);
+segmen7(press,HEX6,HEX7);
+	
+	
+always @(power)
+	begin 
+		if(!power)
+		begin 
+			press<=0;
+			Q<=0;
+			HEX0<= 7'b1111111;
+			HEX1<= 7'b1111111;
+			HEX2<= 7'b1111111;
+			HEX3<= 7'b1111111;
+			HEX4<= 7'b1111111;
+			HEX5<= 7'b1111111;
+			HEX6<= 7'b1111111;
+			HEX7<= 7'b1111111;
+			
+			
+	end
+	
+	 else 
+		begin
+		
+		case(state)
+			
+		S0: 			
+
+		begin	
+			
+		if(!EN)begin
+			state <= S1;
+			life <= 2'b11;
+		end
+		
+		else 
+		state <= S0;
+			
+		
+		end 
+		
+		S1:	//compare answer
+		
+			
+		begin
+			if (press==Q)
+			begin
+				AEQB<=1;
+				life<=life;
+				state<=S3;
+			end
+			
+			else if (press<=Q)
+			begin
+				ALTB<=1; 
+				life<=life - 1;
+				state<= S2;
+			end 
+			
+			else if (press>=Q)
+			begin
+				AGTB<=1; 
+				life<=life - 1;
+				state<= S2;
+			end 
+
+		
+		end
+		
+		S2: //compare life
+		
+		begin 
+			
+			if(life != 2'b00)
+			state<=S1;
+			
+			else if(life==2'b00)
+			state<=S4;
+			
+		 
+		end
+		
+		
+		S3: //display 'WIN'
+		
+		begin
+		 if(!CLR)
+			state<=S0
+			else
+			state<=S3
+		end 
+		
+		
+		
+		S4: //display 'LOSE'
+
+		begin 
+			if(!CLR)
+			state<=S0
+			else
+			state<=S4
+		
+		end
+		
+		
+		
+endcase
+	
+end
+end
+
+
+
+
+
+
+always@(state)
+	begin
+		case(state)
+		
+		S0:
+		begin 
+			HEX0<= 7'b1000000 ;	//0
+			HEX1<= 7'b1000000 ;	//0
+			HEX2<= 7'b1000000 ;	//0
+			HEX3<= 7'b1000000 ;	//0
+			HEX4<= 7'b1000000 ;	//0
+			HEX5<= 7'b1000000 ;	//0
+			HEX6<= 7'b1000000 ;	//0
+			HEX7<= 7'b1000000 ;	//0
+
+		end
+	
+		S1:
+		begin
+		
+		assign HEX5 = 	(AGTB==1)? 7'b011_1111 :
+							(ALTB==1)? 7'b000_0110 :
+							(AEQB==1)? 7'b111_0110 : 7'b111_1111;
+		
+		
+		assign HEX4 = 	(AGTB==1)? 7'b011_0000 :
+							(ALTB==1)? 7'b011_1111 :
+							(AEQB==1)? 7'b111_0110 : 7'b111_1111;
+
+		
+		end
+		
+		S2 :
+		begin
+		
+		
+		end
+		
+		
+		S3 :
+		begin
+			HEX3 <= 7'b100_0011;
+			HEX2 <= 7'b110_0000;
+			HEX1 <= 7'b111_1001;
+			HEX0 <= 7'b000_1001;
+		end
+		
+		S4 :
+		begin
+			HEX3 <= 7'b100_0111;
+			HEX2 <= 7'b100_0000;
+			HEX1 <= 7'b001_0010;
+			HEX0 <= 7'b000_0110;
+		end
+		
+module random(CLK,EN,CLR,Q);
+
+	input CLK,EN,CLR;
+	output reg [3:0]Q;
+	
+	
+	always @ (posedge CLK,negedge CLR)
+	
+		if(!CLR)begin
+		Q[3:0]<=0;
+		
+		end
+			else if (!EN)begin
+				Q[3:0]<=Q[3:0]+1;
+		
+				end
+		
+		
+endmodule
+
+
+module encoder(SW,CLR,CLK,press);
+
+	input CLK,CLR;
+	input [15:0]SW;
+	output reg [3:0]press;
+	
+	
+	always @ (negedge CLK,negedge CLR)
+		if(!CLR)begin
+			press[3:0]=4'b0000;
+			end
+			else begin
+		if (SW[0])
+			press = 4'b0000;
+		else if (SW[1])
+			press = 4'b0001;
+		else if (SW[2])
+			press = 4'b0010;
+		else if (SW[3])
+			press = 4'b0011;
+		else if (SW[4])
+			press = 4'b0100;
+		else if (SW[5])
+			press = 4'b0101;
+		else if (SW[6])
+			press = 4'b0110;
+		else if (SW[7])
+			press = 4'b0111;
+		else if (SW[8])
+			press = 4'b1000;
+		else if (SW[9])
+			press = 4'b1001;
+		else if (SW[10])
+			press = 4'b1010;
+		else if (SW[11])
+			press = 4'b1011;
+		else if (SW[12])
+			press = 4'b1100;
+		else if (SW[13])
+			press = 4'b1101;
+		else if (SW[14])
+			press = 4'b1110;
+		else if (SW[15])
+			press = 4'b1111;
+		end
+	
+endmodule
+
+
+
+module segmen7(Q,HEX0,HEX1);
+
+	input [4:0]Q;
+	output reg [6:0]HEX0,HEX1;
+	
+	always @ (Q)
+	if (Q == 4'b0000) begin
+		HEX0 = 7'b1000000; //0
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0001) begin
+		HEX0 = 7'b1111001; //1
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0010) begin
+		HEX0 = 7'b0100100; //2
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0011) begin
+		HEX0 = 7'b0011000; //3
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0100) begin
+		HEX0 = 7'b0011001; //4
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0101) begin
+		HEX0 = 7'b0010010; //5
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0110) begin
+		HEX0 = 7'b0000010; //6
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b0111) begin
+		HEX0 = 7'b1110000; //7
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b1000) begin
+		HEX0 = 7'b0000000; //8
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b1001) begin
+		HEX0 = 7'b0010000; //9
+		HEX1 = 7'b1000000; //0
+		end
+	else if (Q == 4'b1010) begin
+		HEX0 = 7'b1000000; //0
+		HEX1 = 7'b1111001; //1
+		end
+	else if (Q == 4'b1011) begin
+		HEX0 = 7'b1111001; //1
+		HEX1 = 7'b1111001; //1
+		end
+	else if (Q == 4'b1100) begin
+		HEX0 = 7'b0100100; //2
+		HEX1 = 7'b1111001; //1
+		end
+	else if (Q == 4'b1101) begin
+		HEX0 = 7'b0011000; //3
+		HEX1 = 7'b1111001; //1
+		end
+	else if (Q == 4'b1110) begin
+		HEX0 = 7'b0011001; //4
+		HEX1 = 7'b1111001; //1
+		end
+	else if (Q == 4'b1111) begin
+		HEX0 = 7'b0010010; //5
+		HEX1 = 7'b1111001; //1
+		end
+endmodule

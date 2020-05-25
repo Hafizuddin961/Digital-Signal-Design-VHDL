@@ -1,0 +1,45 @@
+module obstacle(En,Clk,Clr,Q,HEX0);
+	input En,Clk,Clr;
+	output [5:0]Q;
+//	output [0:6]HEX0;
+	wire delay;
+	
+	testtimer
+	t1(Clk,Clr,delay);
+		
+	tflip
+	T1(En,delay,Clr,Q[0]),
+	T2(Q[0] && En,delay,Clr,Q[1]),
+	T3(Q[1] && Q[0] && En,delay,Clr,Q[2]),
+	T4(Q[2] && Q[1] && Q[0] && En,delay,Clr,Q[3]);
+	T5(Q[3] && Q[2] && Q[1] && Q[0] && En,delay,Clr,Q[4]);
+	T6(Q[4] && Q[3] && Q[2] && Q[1] && Q[0] && En,delay,Clr,Q[5]);
+
+endmodule
+
+module testtimer(Clk,Clr,delay);
+	input Clk,Clr;
+	output delay;
+	
+	reg delay = 1'b0;
+	reg [27:0]count;
+	
+	always @(posedge Clk or posedge Clr)
+	begin 
+	if (Clr==1'b1)
+		begin
+		delay<=0;
+		count<=0;
+		end
+	else
+		begin
+		count<=count+1;
+		if (count== 25000000)
+			begin
+			count<=0;
+			delay=~delay;
+			end
+		end
+	end
+
+endmodule

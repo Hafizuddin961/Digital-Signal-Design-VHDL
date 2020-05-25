@@ -1,0 +1,12 @@
+module player(move,reset,player);
+	input move,reset;
+	ouput reg [6:0]player;
+	reg [6:0]go;
+	
+	always @(posedge move)
+		assign go = 7'b0000001
+		if (reset)
+			player = go;
+		else 
+			player = {player}
+endmodule

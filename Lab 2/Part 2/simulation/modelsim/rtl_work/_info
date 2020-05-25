@@ -1,0 +1,147 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hafizuddin\Music\dsd\Lab 2\Part 2\simulation\modelsim
+vcircuitA
+IOz]@PLF12e>ngac0CYD_d0
+VY9`6]Ld>neZ3NNNBeH5B[1
+Z1 dC:\Users\hafizuddin\Music\dsd\Lab 2\Part 2\simulation\modelsim
+w1507731609
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitA.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitA.v
+L0 5
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+ncircuit@a
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2} -O0
+!i10b 1
+!s100 =oS@nPT1=EzNOFlac0<3B1
+!s85 0
+!s108 1508332436.451000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitA.v|
+!s101 -O0
+vcircuitB
+IbDz@X=cm__P49KmkM:kIM2
+VC3Nn]R_:Mfi[R3Rl5lc5S0
+R1
+w1507272915
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitB.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitB.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ncircuit@b
+!i10b 1
+!s100 IMfHHkWIV50]JhHiOjUN22
+!s85 0
+!s108 1508332436.702000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/circuitB.v|
+!s101 -O0
+vcomparator
+I^3MOIDLBWiT:KT[R:K?gl3
+V`UThLfW[VX0FlO5IXS?o<1
+R1
+w1507558832
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/comparator.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/comparator.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 zE]Q@VaQ;?a[mnQMoJRM42
+!s85 0
+!s108 1508332438.263000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/comparator.v|
+!s101 -O0
+vmux2to1
+IlQmGAnJHiEdm6hoj8ml:a0
+VENeCXMWMm:OFWC2QSXfZX3
+R1
+w1507273887
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux2to1.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux2to1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 N?DiA3BT7>]]BIORZ_CC53
+!s85 0
+!s108 1508332437.094000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux2to1.v|
+!s101 -O0
+vmux4bit2to1
+I:JOWbbc<=k>emZA0cIKzV2
+VT94i?D;BYJJKeom>:ZX]J1
+R1
+w1507275555
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux4bit2to1.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux4bit2to1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 2MVmD?Bm5=AVJ`HY>iCn@1
+!s85 0
+!s108 1508332437.389000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux4bit2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/mux4bit2to1.v|
+!s101 -O0
+vpart2
+!i10b 1
+!s100 4b35OPjXZi2e?H26:>lR43
+I_]3b>ezI2C5<@aWQ<FM]e0
+VLD^[9bcdjWJe5Yc=3=aZ>0
+R1
+w1507280006
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/part2.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/part2.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1508332438.622000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/part2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/part2.v|
+!s101 -O0
+R3
+R4
+vsegmen7
+IF2><70>=DTMB_]=Tfmhm_3
+Vj5^?KnB_UhbP<FGJ9M1SG2
+R1
+w1507277625
+8C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/segmen7.v
+FC:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/segmen7.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 @1M<Q6c=2PPnQS_lR2W8A1
+!s85 0
+!s108 1508332437.653000
+!s107 C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/segmen7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2|C:/Users/hafizuddin/Music/dsd/Lab 2/Part 2/segmen7.v|
+!s101 -O0
