@@ -5,7 +5,7 @@ This course introduce to student on how to design logic circuit using VHDL langu
 This course included 2 session which is 2 hours theory class and 3 hours lab session per week. The student will be given task every week and big assignment on ALU design and mini-project<br>
 
 # Mini-project
-Create a game where the player need to guessing the random generated number by allowing to guess 3 times. This project use Finite State Machine(FSM) model. 
+Create a game where the player need to guessing the random generated number by allowing to guess 3 times (Hangman Game). This project use Finite State Machine(FSM) model. 
 
 ### Sketching the circuit: <br />
 ![](https://github.com/Hafizuddin961/Digital-Signal-Design-VHDL/blob/master/sketch.png)
