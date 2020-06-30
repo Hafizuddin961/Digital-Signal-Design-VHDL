@@ -8,7 +8,7 @@ This course included 2 session which are 2 hours theory class and 3 hours lab se
 Create a game where the player need to guessing the random generated number by allowing to guess 3 times (Hangman Game). This project use Finite State Machine(FSM) model. 
 
 ### Sketching the circuit: <br />
-![](https://github.com/Hafizuddin961/Digital-Signal-Design-VHDL/blob/master/sketch.png)
+![](https://github.com/Hafizuddin961/Digital-Signal-Design-VHDL/blob/master/sketch.jpeg)
 
 ### FSM model:
 ![](https://github.com/Hafizuddin961/Digital-Signal-Design-VHDL/blob/master/FSM-1.png)
